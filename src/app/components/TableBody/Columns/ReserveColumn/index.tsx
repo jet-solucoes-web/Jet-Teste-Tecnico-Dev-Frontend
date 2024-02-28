@@ -1,6 +1,6 @@
 const ReserveColumn = () => {
   return (
-    <td className="flex items-center">
+    <td className="reserve-column">
       <span>11/07</span>
     </td>
   );

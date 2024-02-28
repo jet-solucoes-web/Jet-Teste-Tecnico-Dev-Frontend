@@ -37,10 +37,23 @@ tr {
 th,
 td {
   padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.first-column {
-  width: 287px;
+.car-column {
+  width: 20%;
+}
+
+.reserve-column,
+.status-column,
+.rating-column {
+  width: 24%;
+}
+
+.actions-column {
+  width: 6.6%;
 }
 
 @layer utilities {

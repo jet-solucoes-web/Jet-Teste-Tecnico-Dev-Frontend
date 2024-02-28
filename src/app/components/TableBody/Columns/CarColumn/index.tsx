@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css";
 import Image from "next/image";
 import miniCooperImage from "../../../../../assets/images/mini-cooper.jpeg";
 
 const CarColumn = () => {
   return (
-    <td className="flex items-center gap-8">
+    <td className="gap-1 car-column">
       <Image
         src={miniCooperImage}
         alt="Mini Cooper"
