@@ -1,4 +1,4 @@
-@tailwind base;
+@tailwind base.css;
 @tailwind components;
 @tailwind utilities;
 
@@ -18,12 +18,31 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;
+  padding: 32px;
+  line-height: 1.5;
+}
+
+table {
+  box-shadow: 0px 1px 2px -1px #0000001a, 0px 1px 3px 0px #0000001a;
+  border-radius: 8px;
+}
+
+tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th,
+td {
+  padding: 16px;
+}
+
+.table-header {
+  background-color: #f9fafb;
+}
+
+.first-column {
+  width: 287px;
 }
 
 @layer utilities {
