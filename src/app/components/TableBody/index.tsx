@@ -1,4 +1,5 @@
 import CarColumn from "./Columns/CarColumn";
+import RatingColumn from "./Columns/RatingColumn";
 import ReserveColumn from "./Columns/ReserveColumn";
 import StatusColumn from "./Columns/StatusColumn";
 
@@ -8,6 +9,7 @@ const TableBody = () => {
       <CarColumn></CarColumn>
       <ReserveColumn></ReserveColumn>
       <StatusColumn></StatusColumn>
+      <RatingColumn></RatingColumn>
     </tr>
   );
 };
