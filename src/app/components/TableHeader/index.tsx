@@ -4,7 +4,7 @@ const TableHeader = () => {
   const tableHeaders = ["car", "next reservation", "status", "rating"];
 
   return (
-    <tr className="flex justify-between">
+    <tr>
       {tableHeaders.map((header, index) => (
         <th key={index}>{header.toUpperCase()}</th>
       ))}

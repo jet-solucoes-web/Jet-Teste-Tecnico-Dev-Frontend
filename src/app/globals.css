@@ -29,16 +29,14 @@ table {
 }
 
 tr {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #e5e7eb;
 }
 
 th,
 td {
   padding: 16px;
-}
-
-.table-header {
-  background-color: #f9fafb;
 }
 
 .first-column {
