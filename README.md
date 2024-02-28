@@ -1,6 +1,6 @@
 # Teste-Técnico-Dev-Frontend-Jr
 ## Descrição da vaga
-Desenvolvedor frontend júnior, com atuação remota, em regime CLT, com salário inicial de R$ 2.000,00 + benefícios ( Auxílio home-office -> R$ 300,00 + Vale alimentação -> valor base * total de dias úteis do mês)
+Desenvolvedor frontend júnior, com atuação remota, em regime CLT, com salário inicial de R$ 2.000,00 + benefícios ( Auxílio home-office -> R$ 300,00 + Vale alimentação -> valor base de ticket* total de dias úteis do mês)
 ## Descrição do teste técnico
 Criar uma aplicação web, responsiva, utilizando as tecnologias propostas, onde seja exibida em telas as versões do data-table, exposto no figma.
 A idéia nesta avaliação é avaliar a capacidade de resolução de problemas dos candidatos como também a criatividade nesse processo.
