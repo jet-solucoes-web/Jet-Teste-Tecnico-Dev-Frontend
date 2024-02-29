@@ -1,7 +1,11 @@
+import MainTable from "./components/mainTable";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <body></body>
+    <main>
+      <body className="flex content-center justify-center">
+        <MainTable />
+      </body>
     </main>
   );
 }

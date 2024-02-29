@@ -4,13 +4,13 @@ import MiniCooper2020 from "../../../public/Mini Cooper 2020.png";
 
 const MainTable = () => {
   return (
-    <table>
-      <tr>
-        <th>CAR</th>
-        <th>NEXT RESERVATION</th>
-        <th>STATUS</th>
-        <th>RATING</th>
-        <th>ACTIONS</th>
+    <table className="h-lvh bg-[black]">
+      <tr className="w-5/6 bg-[#1da1f2]">
+        <th className="w-1/5">CAR</th>
+        <th className="w-1/5">NEXT RESERVATION</th>
+        <th className="w-1/5">STATUS</th>
+        <th className="w-1/5">RATING</th>
+        <th className="w-1/5">ACTIONS</th>
       </tr>
       <tr>
         <td>
