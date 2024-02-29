@@ -5,6 +5,17 @@
   gap: 20px;
 }
 
+.image-container {
+  position: relative;
+  margin-right: 16px;
+}
+
+.checked-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .description-car {
   display: flex;
   flex-direction: column;

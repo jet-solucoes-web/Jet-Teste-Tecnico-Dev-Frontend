@@ -8,8 +8,20 @@ import './mobile-car.css';
 export default function MobileCar(car: ICar) {
   return (
     <section className="card-car">
-      <div>
-        <Image src={car.imageUrl} alt='Image car' width={85} height={85} />
+      <div className="image-container">
+        <Image
+          src={car.imageUrl}
+          alt='Image car'
+          width={85}
+          height={85}
+        />
+        <Image
+          src={ car.status === 'Avaliable' ? '/Indicators.png': '' }
+          alt='avaliable'
+          width={24}
+          height={24}
+          className="checked-icon"
+        />
       </div>
       <div className="description-car">
         <h1 className="title-car">{car.name}</h1>
