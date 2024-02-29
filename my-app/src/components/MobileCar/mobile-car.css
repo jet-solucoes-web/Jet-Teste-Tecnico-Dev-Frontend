@@ -1,0 +1,30 @@
+.card-car {
+  width: 90vw;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.description-car {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title-car {
+  width: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(17, 25, 40, 1);
+}
+
+.reservetion-car {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(107, 114, 128, 1);
+}
+
+.icon-card {
+  margin-top: 3px;
+}
