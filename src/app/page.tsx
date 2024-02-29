@@ -4,8 +4,8 @@ import TableHeader from "./components/TableHeader";
 export default function HomePage() {
   return (
     <table className="w-full">
-      <TableHeader></TableHeader>
-      <TableBody></TableBody>
+      <TableHeader />
+      <TableBody />
     </table>
   );
 }

@@ -1,5 +1,3 @@
-import "./style.css";
-
 const TableHeader = () => {
   const tableHeaders = [
     { name: "Car", class: "car-column" },
@@ -10,7 +8,7 @@ const TableHeader = () => {
   ];
 
   return (
-    <tr className="text-[#6b7280] bg-[#f9fafb] text-[12px] font-semibold rounded-t-lg">
+    <tr className="hidden bg-[#f9fafb] text-[12px] font-semibold rounded-t-lg sm:flex">
       {tableHeaders.map((header, index) => (
         <th className={header.class} key={index}>
           {header.name.toUpperCase()}

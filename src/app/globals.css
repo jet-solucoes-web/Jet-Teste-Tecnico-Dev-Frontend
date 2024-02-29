@@ -51,7 +51,7 @@ td {
 .reserve-column,
 .status-column,
 .rating-column {
-  width: 24%;
+  width: 20%;
 }
 
 .actions-column {
@@ -63,5 +63,39 @@ td {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (max-width: 640px) {
+  td {
+    padding: 0;
+
+    .car-column,
+    .reserve-column,
+    .status-column,
+    .rating-column,
+    .actions-column {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  tr {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    td {
+      align-items: center;
+    }
+
+    .car-column,
+    .reserve-column,
+    .status-column,
+    .rating-column,
+    .actions-column {
+      width: auto;
+    }
   }
 }

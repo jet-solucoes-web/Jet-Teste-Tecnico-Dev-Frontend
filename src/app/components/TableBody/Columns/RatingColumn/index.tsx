@@ -3,7 +3,7 @@ import starImage from "../../../../../assets/images/star-vector.svg";
 
 const RatingColumn = () => {
   return (
-    <td className="gap-1 rating-column">
+    <td className="gap-1 rating-column ">
       <Image src={starImage} alt="star" width={20} height={20} />
       <Image src={starImage} alt="star" width={20} height={20} />
       <Image src={starImage} alt="star" width={20} height={20} />

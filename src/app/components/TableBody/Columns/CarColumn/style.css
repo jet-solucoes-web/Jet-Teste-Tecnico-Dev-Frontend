@@ -1,6 +1,0 @@
-@media (max-width: 1080px) {
-  td {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
