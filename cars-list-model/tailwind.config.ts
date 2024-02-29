@@ -8,6 +8,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      tablet: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "928px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       height: {
         "14.25": "14.25%",
@@ -19,6 +29,7 @@ const config: Config = {
         "10": "10%",
         "20": "20%",
         "30": "30%",
+        "50": "50%",
         "22.5": "22.5%",
         "95": "95%",
         "95vw": "95vw",
@@ -31,6 +42,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      borderRadius: {
+        "8": "8px",
       },
     },
     plugins: [],
