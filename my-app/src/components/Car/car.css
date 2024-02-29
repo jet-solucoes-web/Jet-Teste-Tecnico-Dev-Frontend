@@ -1,0 +1,45 @@
+.custom-name-styles {
+  color: rgba(17, 25, 40, 1);
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.custom-styles {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(107, 114, 128, 1);
+}
+
+.custom-avaliable-styles {
+  width: 72px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 3px 12px;
+  border-radius: 6px;
+  background-color: rgba(222, 247, 236, 1);
+  color: rgba(3, 84, 63, 1);
+}
+
+.custom-not-avaliable {
+  width: 72px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 3px 12px;
+  border-radius: 6px;
+  background-color: rgb(241, 145, 121);
+  color: rgb(255, 0, 0);
+}
+
+.custom-action-styles {
+  width: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
