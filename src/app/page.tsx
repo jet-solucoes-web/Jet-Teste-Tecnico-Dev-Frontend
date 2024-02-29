@@ -1,8 +1,10 @@
+import { Table } from "@/components/Table";
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="max-w-fullScreen min-h-dvh items-center justify-center bg-slate-200 flex px-4">
+      <Table/>
     </main>
   );
 }
