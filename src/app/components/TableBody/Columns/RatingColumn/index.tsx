@@ -1,5 +1,5 @@
 import Image from "next/image";
-import starImage from "../../../../../assets/images/vetor_estrela.svg";
+import starImage from "../../../../../assets/images/star-vector.svg";
 
 const RatingColumn = () => {
   return (

@@ -1,3 +1,4 @@
+import ActionsColumn from "./Columns/ActionsColumn";
 import CarColumn from "./Columns/CarColumn";
 import RatingColumn from "./Columns/RatingColumn";
 import ReserveColumn from "./Columns/ReserveColumn";
@@ -10,6 +11,7 @@ const TableBody = () => {
       <ReserveColumn></ReserveColumn>
       <StatusColumn></StatusColumn>
       <RatingColumn></RatingColumn>
+      <ActionsColumn></ActionsColumn>
     </tr>
   );
 };

@@ -54,6 +54,8 @@ td {
 
 .actions-column {
   width: 6.6%;
+  align-items: center;
+  justify-content: center;
 }
 
 @layer utilities {
