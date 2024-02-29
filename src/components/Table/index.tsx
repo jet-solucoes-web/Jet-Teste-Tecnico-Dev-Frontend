@@ -1,7 +1,11 @@
-export const Table = () => {
-    return (
-        <div className="w-full max-w-7xl bg-stone-950 h-6">
+import { HeaderTable } from "./HeaderTable";
+import { ListTable } from "./ListTable";
 
-        </div>
-    )
-}
+export const Table = () => {
+  return (
+    <div className="table md:max-w-8xl">
+      <HeaderTable />
+      <ListTable />
+    </div>
+  );
+};

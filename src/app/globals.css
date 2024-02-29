@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .table {
+    @apply w-full bg-white shadow-brand1 max-w-sm my-4
+  }
+  .headerTable {
+    @apply w-full hidden items-center capitalize border-b p-4 border-gray-200 
+  }
+  .containerTitleTable {
+    @apply flex justify-start items-center
+  }
+  .titleTable {
+    @apply text-gray-500 font-semibold
+  }
+  .carList {
+    @apply w-full 
+  }
+}
