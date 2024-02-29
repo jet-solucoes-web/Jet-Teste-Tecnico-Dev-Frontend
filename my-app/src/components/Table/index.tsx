@@ -1,26 +1,18 @@
 'use client';
 
-import ICar from '@/interfaces/car';
-import { useEffect, useState } from 'react'
+import { useFetchData } from '@/hooks/useFetchData';
 import Car from '../Car';
 
 export default function Table() {
-  const [cars, setCars] = useState<ICar[]>([]);
+  const { data: cars, loading, error  } = useFetchData('/api');
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await fetch('/api');
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
-      if (response.ok) {
-        const data = await response.json();
-        setCars(data.cars);
-      }
-      } catch (error) {
-        console.log('Error fetching data:', error);
-      }
-    })()
-  }, []);
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
 
   return (
     <table className="min-w-full divide-y border border-gray-200">
