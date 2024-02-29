@@ -4,51 +4,51 @@ import MiniCooper2020 from "../../../public/Mini Cooper 2020.png";
 
 const MainTable = () => {
   return (
-    <table className="h-lvh bg-[black]">
-      <tr className="w-5/6 bg-[#1da1f2]">
-        <th className="w-1/5">CAR</th>
-        <th className="w-1/5">NEXT RESERVATION</th>
-        <th className="w-1/5">STATUS</th>
-        <th className="w-1/5">RATING</th>
-        <th className="w-1/5">ACTIONS</th>
+    <table className="w-95 h-90 bg-[yellow]">
+      <tr className="w-100 bg-[#F9FAFB]">
+        <th className="text-[#6B7280]">CAR</th>
+        <th className="text-[#6B7280]">NEXT RESERVATION</th>
+        <th className="text-[#6B7280]">STATUS</th>
+        <th className="text-[#6B7280]">RATING</th>
+        <th className="text-[#6B7280]">ACTIONS</th>
       </tr>
       <tr>
         <td>
           <Image
             src={MiniCooper2020}
             alt="Mini Cooper 2020"
-            width={"200"}
-            height={"200"}
+            width={"20"}
+            height={"25"}
           />
           <Image
             src={MiniCooper2020}
             alt="Mini Cooper 2020"
-            width={"200"}
-            height={"200"}
+            width={"20"}
+            height={"25"}
           />
           <Image
             src={MiniCooper2020}
             alt="Mini Cooper 2020"
-            width={"200"}
-            height={"200"}
+            width={"20"}
+            height={"25"}
           />
           <Image
             src={MiniCooper2020}
             alt="Mini Cooper 2020"
-            width={"200"}
-            height={"200"}
+            width={"20"}
+            height={"25"}
           />
           <Image
             src={MiniCooper2020}
             alt="Mini Cooper 2020"
-            width={"200"}
-            height={"200"}
+            width={"20"}
+            height={"25"}
           />
           <Image
             src={MiniCooper2020}
             alt="Mini Cooper 2020"
-            width={"200"}
-            height={"200"}
+            width={"20"}
+            height={"25"}
           />
         </td>
         <td>
