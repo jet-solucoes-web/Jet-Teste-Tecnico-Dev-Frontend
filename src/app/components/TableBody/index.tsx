@@ -6,7 +6,7 @@ import StatusColumn from "./Columns/StatusColumn";
 
 const TableBody = () => {
   return (
-    <tr className="bg-white text-sm">
+    <tr className="bg-white">
       <CarColumn></CarColumn>
       <ReserveColumn></ReserveColumn>
       <StatusColumn></StatusColumn>

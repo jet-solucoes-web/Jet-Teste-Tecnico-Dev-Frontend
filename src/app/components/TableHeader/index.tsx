@@ -10,7 +10,7 @@ const TableHeader = () => {
   ];
 
   return (
-    <tr>
+    <tr className="text-[#6b7280] bg-[#f9fafb] text-[12px] font-semibold rounded-t-lg">
       {tableHeaders.map((header, index) => (
         <th className={header.class} key={index}>
           {header.name.toUpperCase()}
