@@ -9,7 +9,7 @@ export function CarTableRow({ children, ...rest }: CarTableRowProps) {
   return (
     <tr
       className={twMerge(
-        "border border-solid border-[#e5e7eb]",
+        "mb-1.5 pb-1 md:mb-0 md:p-4 border-b last:border-b-0 md:border md:last:border border-solid border-[#e5e7eb] relative flex flex-col md:table-row",
         rest.className
       )}
     >

@@ -1,16 +1,28 @@
+import { ReactNode } from "react";
 import Image from "next/image";
 
 interface CarContentProps {
+  children?: ReactNode;
   carImage: any;
   carName: string;
 }
 
-export function CarContent({ carImage, carName }: CarContentProps) {
+export function CarContent({ children, carImage, carName }: CarContentProps) {
   return (
-    <td className="flex items-center gap-2 py-1">
-      <Image src={carImage} alt={carName} />
+    <div className="flex items-center gap-4 md:gap-2">
+      <Image
+        className="aspect-square object-cover max-w-20 w-full md:max-w-none md:w-auto"
+        src={carImage}
+        alt={carName}
+        priority
+      />
 
-      <p className="inline-block text-gray-900">{carName}</p>
-    </td>
+      <div>
+        <p className="inline-block text-gray-900 font-semibold md:font-medium">
+          {carName}
+        </p>
+        {children}
+      </div>
+    </div>
   );
 }
