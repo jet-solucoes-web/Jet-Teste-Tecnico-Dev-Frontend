@@ -1,8 +1,13 @@
+"use client";
+
 import CarMiniCooper2020 from "@/assets/images/mini-cooper-car-2020.svg";
 
 import { CarTable } from "@/components/CarTable";
+import { useWindowSize } from "@/hooks/useWindowsSize";
 
 export default function Home() {
+  const { width } = useWindowSize();
+
   const cars = [
     {
       carContent: {
@@ -61,35 +66,79 @@ export default function Home() {
   ];
 
   return (
-    <main className="p-6 rounded-lg">
+    <main className="p-4 md:p-6 rounded-lg">
       <CarTable.Root>
-        <CarTable.Head>
-          <CarTable.Row className="uppercase text-gray-500 font-bold">
-            <th>Car</th>
-            <th>Next Reservation</th>
-            <th>Status</th>
-            <th>Rating</th>
-            <th className="block ml-auto w-max">Actions</th>
-          </CarTable.Row>
-        </CarTable.Head>
+        {width >= 768 && (
+          <CarTable.Head>
+            <CarTable.Row className="uppercase text-gray-500 font-bold">
+              <th>Car</th>
+              <th>Next Reservation</th>
+              <th>Status</th>
+              <th>Rating</th>
+              <th className="text-right">Actions</th>
+            </CarTable.Row>
+          </CarTable.Head>
+        )}
 
         <CarTable.Body>
           {cars.map(
-            ({
-              carContent: { carImage, carName },
-              nextReservation,
-              isAvailable,
-              rating,
-            }) => {
+            (
+              {
+                carContent: { carImage, carName },
+                nextReservation,
+                isAvailable,
+                rating,
+              },
+              index
+            ) => {
               return (
-                <CarTable.Row>
-                  <CarTable.Content carImage={carImage} carName={carName} />
-                  <CarTable.NextReservation
-                    nextReservationDate={nextReservation}
-                  />
-                  <CarTable.Availability isAvailable={isAvailable} />
-                  <CarTable.Rating ratingStarsAmount={rating} />
-                  <CarTable.Actions />
+                <CarTable.Row key={index}>
+                  {width < 768 ? (
+                    <>
+                      <CarTable.Data className="absolute top-0 left-0">
+                        <CarTable.Availability isAvailable={isAvailable} />
+                      </CarTable.Data>
+
+                      <CarTable.Data className="md:py-0">
+                        <CarTable.Content carImage={carImage} carName={carName}>
+                          <CarTable.NextReservation
+                            nextReservationDate={nextReservation}
+                            isMobileVersion={width < 768}
+                          />
+
+                          <CarTable.Rating ratingStarsAmount={rating} />
+                        </CarTable.Content>
+                      </CarTable.Data>
+                    </>
+                  ) : (
+                    <>
+                      <CarTable.Data className="md:py-0">
+                        <CarTable.Content
+                          carImage={carImage}
+                          carName={carName}
+                        />
+                      </CarTable.Data>
+
+                      <CarTable.Data>
+                        <CarTable.NextReservation
+                          nextReservationDate={nextReservation}
+                          isMobileVersion={width < 768}
+                        />
+                      </CarTable.Data>
+
+                      <CarTable.Data>
+                        <CarTable.Availability isAvailable={isAvailable} />
+                      </CarTable.Data>
+
+                      <CarTable.Data>
+                        <CarTable.Rating ratingStarsAmount={rating} />
+                      </CarTable.Data>
+                    </>
+                  )}
+
+                  <CarTable.Data className="absolute right-0 md:relative">
+                    <CarTable.Actions />
+                  </CarTable.Data>
                 </CarTable.Row>
               );
             }
