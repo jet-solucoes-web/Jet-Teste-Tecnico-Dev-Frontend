@@ -1,9 +1,12 @@
-import { ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
-interface CarTableHeadProps {
+interface CarTableHeadProps extends ComponentProps<"thead"> {
   children: ReactNode;
 }
 
-export function CarTableHead({ children }: CarTableHeadProps) {
-  return <thead className="bg-gray-50">{children}</thead>;
+export function CarTableHead({ children, ...rest }: CarTableHeadProps) {
+  return (
+    <thead className={twMerge("bg-gray-50", rest.className)}>{children}</thead>
+  );
 }

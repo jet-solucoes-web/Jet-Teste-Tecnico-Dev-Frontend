@@ -13,12 +13,10 @@ export function CarRating({ ratingStarsAmount }: CarRatingProps) {
   }
 
   return (
-    <td>
-      <div className="flex items-center gap-0.5">
-        {ratingStars.map((_, index) => {
-          return <FaStar key={index} />;
-        })}
-      </div>
-    </td>
+    <div className="flex items-center gap-0.5">
+      {ratingStars.map((_, index) => {
+        return <FaStar key={index} />;
+      })}
+    </div>
   );
 }
