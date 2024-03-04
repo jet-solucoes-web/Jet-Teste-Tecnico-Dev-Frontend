@@ -1,6 +1,6 @@
 "use client";
 
-import CarMiniCooper2020 from "@/assets/images/mini-cooper-car-2020.svg";
+import CarMiniCooper2020 from "@/assets/images/mini-cooper-car-2020.jpeg";
 
 import { CarTable } from "@/components/CarTable";
 import { useWindowSize } from "@/hooks/useWindowsSize";
