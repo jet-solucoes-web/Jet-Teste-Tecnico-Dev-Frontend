@@ -1,0 +1,9 @@
+th {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  th {
+    padding: 16px;
+  }
+}
