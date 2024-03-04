@@ -17,6 +17,8 @@ export function CarAvailability({ isAvailable }: CarAvailabilityProps) {
       {isAvailable ? "Available" : "Unavailable"}
     </span>
   ) : (
-    <IoIosCheckmarkCircle className="text-green-700 text-2xl" />
+    <IoIosCheckmarkCircle
+      className={`text-2xl ${isAvailable ? "text-green-700" : "text-red-600"}`}
+    />
   );
 }
