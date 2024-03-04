@@ -1,4 +1,9 @@
 # Teste-Técnico-Dev-Frontend-Jr
+<img src="src/assets/readme-images/project-page.png" alt="Project Page Screenshot" />
+
+## Pontuação no Lighthouse
+<img src="src/assets/readme-images/lighthouse-score.png" alt="Lighthouse Score Screenshot" />
+
 ## Descrição da vaga
 Desenvolvedor frontend júnior, com atuação remota, em regime CLT, com salário inicial de R$ 2.000,00 + benefícios ( Auxílio home-office -> R$ 300,00 + Vale alimentação -> valor base de ticket* total de dias úteis do mês)
 ## Descrição do teste técnico
